@@ -5,5 +5,5 @@
 
 #### The machine
 
-![](https://cdn.rawgit.com/pwm/fsm-talk/master/diagram/person.svg)
+![](https://cdn.rawgit.com/pwm/fsm-talk/master/dia/person.svg)
 
