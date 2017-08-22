@@ -1,0 +1,29 @@
+@startuml
+
+skinparam state {
+  BackgroundColor<<Start>> LightBlue
+}
+
+state Asleep<<Start>>
+state Awake
+state Dressed
+state Fed
+state Ready
+state Work
+state Cafe
+state Home
+
+Asleep -up-> Awake: Alarm
+Awake --> Dressed: Dress
+Awake --> Fed: Eat
+Dressed --> Ready: Eat
+Fed --> Ready: Dress
+Ready -down-> Work: GoToWork
+Work --> Work: Think
+Work -left-> Cafe: Yawn
+Cafe --> Work: Coffee
+Work --> Home: GoHome
+Home --> Asleep: Read
+Home --> Asleep: WatchTV
+
+@enduml
